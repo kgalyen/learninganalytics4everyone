@@ -49,7 +49,7 @@ write.csv(engData, file = "engData.csv",row.names=FALSE)
 
 # Add a calculated column "percentage.earned"
 # use mutate
-engJoined_Perc <- dplyr::mutate(engJoined, PercentEarned = Points_Earned/Points.Possible)
+engJoined_Perc <- dplyr::mutate(engData, PercentEarned = PointsEarned/Points.Possible)
 # export to check it out in Excel 
 write.csv(engJoined_Perc, file="engJoined_Perc.csv", row.names=FALSE)
 
